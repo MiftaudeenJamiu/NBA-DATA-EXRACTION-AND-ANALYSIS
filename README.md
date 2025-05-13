@@ -61,29 +61,8 @@ Cleaning was performed in SQL:
 - Renamed ambiguous column headers for readability
 - Removed irrelevant or missing records
 - Standardised column data types and created a view
+- 📄 [View NBA SQL Queries](https://github.com/MiftaudeenJamiu/NBA-DATA-EXRACTION-AND-ANALYSIS/blob/a066f6e0e81571bc63a0faef90699466ba6e94ce/NBA%20SQL%20queries.ssmssln)
 
-```sql
-CREATE VIEW PlayerPerfomance AS 
-SELECT
-    PLAYER AS player_name,
-    Year AS year,
-    CASE 
-        WHEN Season_type = 'Regular%20Season' THEN 'Regular Season'
-        WHEN Season_type = 'Playoffs' THEN 'Playoffs'
-        WHEN Season_type = 'PlayIn' THEN 'Play-In'
-        ELSE Season_type
-    END AS season_type,
-    GP,
-    MIN,
-    FGM AS FG,
-    FG3M AS "3P",
-    FTM,
-    PTS,
-    REB,
-    AST,
-    STL
-FROM [dbo].[NBA_Data]
-WHERE Season_type IN ('Regular%20Season', 'Playoffs', 'PlayIn');
 
 ## Exploratory Data Analysis
 EDA was performed to identify:
