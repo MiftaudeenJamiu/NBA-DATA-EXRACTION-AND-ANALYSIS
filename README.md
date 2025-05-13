@@ -49,7 +49,7 @@ Using Python, player statistics were scraped across different seasons:
 - Field Goals Made (FGM), 3-Pointers Made (FG3M), Free Throws Made (FTM)
 - Minutes Played (MIN), Games Played (GP), Steals (STL)
 
-📁 Notebook: `notebooks/nba_scraper.ipynb`
+📁 .[Python Notebook:](https://github.com/MiftaudeenJamiu/NBA-DATA-EXRACTION-AND-ANALYSIS/blob/8a5d3e51d365b2ab0e7aa28d9c9251960c652c90/NBA%20SQL%20queries.ssmssln)
 
 ---
 
@@ -75,7 +75,7 @@ Impact of games played (GP) and minutes (MIN) on productivity
 
 Performance variations between Regular Season, Playoffs, and Play-In
 
-##Key visualisations:
+## Key visualisations:
 
 Distribution of Points and Assists
 
@@ -83,7 +83,7 @@ Average stats per season type
 
 Correlation matrix between performance metrics
 
-🧮 Data Analysis (SQL)
+##  🧮 Data Analysis (SQL)
 The cleaned dataset was queried to answer key questions
 
 SELECT
@@ -103,9 +103,9 @@ FROM PlayerPerfomance
 ORDER BY player_name, year;
 Insights from SQL queries were used as the backbone for Power BI dashboards.
 
-📊 Visualization (Power BI)
-Final insights were visualized using Power BI.
-🔗 Interactive Dashboard: View here
+## 📊 Visualization (Power BI)
+Final insights were visualised using Power BI.
+🔗 Interactive Dashboard:  [View here](https://github.com/MiftaudeenJamiu/NBA-DATA-EXRACTION-AND-ANALYSIS/blob/a066f6e0e81571bc63a0faef90699466ba6e94ce/NBA%20SQL%20queries.ssmssln)
 
 Dashboard includes:
 
@@ -115,19 +115,25 @@ Top 10 players by points, assists, and rebounds
 
 Season-over-season trends
 
-Comparison of performance in Playoffs vs Regular Season
+Comparison of performance in Playoffs vs Regular Season.
+Below are what some of the player performance looks like
+![Lebron Dashboard pb](https://github.com/user-attachments/assets/c2508922-a28a-47e1-898c-b2ba4af2ad15)
+![Jamal Murray Dasboard Pb](https://github.com/user-attachments/assets/03cf0eec-3942-400d-9caf-877a5393567a)
+![Stephen Curry Dashboard Pb](https://github.com/user-attachments/assets/da54399c-23cc-4f25-8f8f-8f9a4999e790)
+![Giannis Dashboard pb](https://github.com/user-attachments/assets/2a8b6f97-e27f-4ee0-898b-e76ec987b83c)
 
-📌 Results/Findings
+
+## 📌 Results/Findings
 Performance Spikes: Many star players see significant increases in key stats during Playoffs.
 
 Consistency is Key: Players with high GP and MIN are top contributors in most categories.
 
-Top Performers: Identified consistent all-round players across multiple seasons.
+Top Performers: Identified consistent all-around players across multiple seasons.
 
-Seasonal Patterns: Regular Season has more variability in performance; Playoffs reflect peak effort.
+Seasonal Patterns: The Regular Season has more variability in performance; Playoffs reflect peak effort.
 
-✅ Recommendations
-Scouting: Prioritize consistent players across all metrics when selecting rosters.
+##  ✅ Recommendations
+Scouting: Prioritise consistent players across all metrics when selecting rosters.
 
 Performance Bonuses: Align incentives with playoff efficiency and reliability.
 
@@ -135,20 +141,18 @@ Coaching Strategy: Adjust game-time based on historic playoff performances.
 
 Statistical Monitoring: Implement tools to automatically detect performance drops early.
 
-⚠️ Limitations
+##  ⚠️ Limitations
 Some season types were URL-encoded (e.g., Regular%20Season), requiring manual correction.
 
 Data reflects aggregate player-level stats only — lacks game-by-game breakdown.
 
 A few outliers in minutes and points affected the visual scale (not removed to retain data integrity).
 
-Scraping is sensitive to NBA.com structure changes — automation may break without updates.
+Scraping is sensitive to Nba.com structure changes — automation may break without updates.
 
-📚 References
+## 📚 References
 NBA Official Stats
 
 Stack Overflow (for web scraping & SQL)
-
-SQL for Businesses by werty
 
 Power BI Docs
